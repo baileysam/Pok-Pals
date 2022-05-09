@@ -1,0 +1,45 @@
+<section class="nav" id="js-nav">
+    <div class="nav__inner">
+        <img class="nav__inner__logo" src="static/images/logo/logo.svg" alt="logo">
+        <img class="nav__inner__burger" id="js-burger" src="static/images/icons/burger.svg" alt="burger menu">
+    </div>
+
+    <div class="nav__menu" id="js-menu">
+        <img class="nav__menu__pokeball" src="static/images/pokeball.svg" alt="pokeball">
+        <img class="nav__menu__pokeball" src="static/images/pokeball.svg" alt="pokeball">
+        <img class="nav__menu__pokeball" src="static/images/pokeball.svg" alt="pokeball">
+
+        <div class="nav__menu__buttons">
+            <a class="nav__menu__buttons__button" href="">hellooooooo</a>
+            <a class="nav__menu__buttons__button" href="">hellooooooo</a>
+            <a class="nav__menu__buttons__button" href="">hellooooooo</a>
+        </div>
+
+        <div class="nav__menu__profile">
+            <span class="nav__menu__profile__message">Hey <b>Trainer!</b></span>
+            <div class="nav__menu__profile__icon"></div>
+        </div>
+
+    </div>
+</section>
+
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function() {
+        const nav  = document.getElementById('js-nav');
+        const page = document.location.pathname;
+
+        if (page === '/') {
+            nav.classList.add('nav--hidden');
+        }
+
+        const burger = document.getElementById('js-burger');
+        const menu   = document.getElementById('js-menu');
+
+        burger.addEventListener('click', function() {
+            menu.classList.toggle('nav__menu--open');
+        })
+
+    });
+
+
+</script>

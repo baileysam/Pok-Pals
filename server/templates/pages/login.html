@@ -1,7 +1,38 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>BORIS BOP</h1>
-<h2>BORIS BOP</h1>
-<h2>BORIS BOP</h1>
+<section class="login">
+    <div class="login__hero">
+        <img class="login__hero__pokeball" src="static/images/pokeball.svg" alt="pokeball">
+        <img class="login__hero__pokeball" src="static/images/pokeball.svg" alt="pokeball">
+        <img class="login__hero__pokeball" src="static/images/pokeball.svg" alt="pokeball">
+
+        <div class="login__hero__pokemon">
+            <img class="login__hero__pokemon__image" src="static/images/charmander.png" alt="charmander">
+        </div>
+
+    </div>
+
+    <div class="login__form">
+        <div class="login__form__inputs">
+            <div class="login__form__inputs__input">
+                <input class="login__form__inputs__input__field" type="email" name="email" placeholder="email@example.com">
+            </div>
+    
+            <div class="login__form__inputs__input">
+                <input class="login__form__inputs__input__field" type="password" name="password" placeholder="••••••••">
+            </div>
+
+            <div class="login__form__inputs__button">
+                <button class="login__form__inputs__button__button button button--red">LOGIN</button>
+            </div>
+        </div>
+
+        <div class="login__form__switch">
+            <span class="login__form__switch__tip">No account?</span>
+            <button class="login__form__switch__button button button--blue">SIGN UP</button>
+        </div>
+
+    </div>
+</section>
 {% endblock %}
